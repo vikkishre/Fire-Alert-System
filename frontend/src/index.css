@@ -1,0 +1,198 @@
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #eaeaea;
+  background-color: #0f172a; /* Dark blue background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Center Everything */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container (Login / Signup Box) */
+.auth-container {
+  background-color: #1e293b;
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: #0f172a;
+  color: white;
+  font-size: 0.95rem;
+  transition: border 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #6366f1;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #6366f1;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #4f46e5;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error Text */
+.error {
+  color: #ef4444;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: #818cf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.dashboard h1 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Alert Banner */
+.alert-banner {
+  background: linear-gradient(135deg, #ff4d4f, #b91c1c);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.25);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+/* Section Titles */
+.section-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Grid Layout */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Status Row */
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+/* Status Indicator */
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.indicator.green { background-color: #22c55e; }
+.indicator.red { background-color: #ef4444; }
+.indicator.yellow { background-color: #facc15; }
+
+/* Temperature Highlight */
+.temp-high {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.temp-normal {
+  color: #22c55e;
+  font-weight: 500;
+}
