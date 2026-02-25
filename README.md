@@ -83,21 +83,7 @@ Dashboard reflects real-time updates.
 
 Optional backend can trigger emergency phone alerts.
 
-📂 Project Structure
-Fire-Alert-System/
-│
-├── backend/
-│   ├── server.js
-│   └── .env
-│
-├── frontend/
-│   ├── index.html
-│   └── .env
-│
-├── esp8266/
-│   └── fire_alert_code.ino
-│
-└── README.md
+
 🔐 Security Notice
 
 Sensitive files such as:
@@ -147,15 +133,7 @@ Set read/write rules for testing
 
 Copy database URL & secret
 
-📊 Firebase Data Structure
-fire_system
-  └── live
-        ├── gasLevel
-        ├── flameDetected
-        ├── fireStatus
-        ├── systemState
-        ├── ledState
-        └── buzzerState
+
 🎯 Future Improvements
 
 📲 SMS Alert Integration
